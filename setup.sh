@@ -26,7 +26,7 @@ SOURCE_BEDTOOLS="https://github.com/arq5x/bedtools2/releases/download/v2.21.0/be
 EXP_BTV="2.21.0"
 
 version_gt () {
-  test $(printf '%s\n' $@ | sort -V | head -n 1) == "$1";
+  test $(printf '%s\n' $@ | sort -Vr | head -n 1) == "$1";
 }
 
 
